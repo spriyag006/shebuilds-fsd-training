@@ -1,0 +1,85 @@
+# Module 4: React.js Frontend Development
+
+## Classroom Activities
+
+### Activity 1: Component Creation Workshop
+
+In this activity, I learned how to create reusable components in React.js. I created components such as a **Navigation Bar, Cards, Forms, Modal Windows, and Dashboard Widgets**.
+
+I learned that each component can be created separately and reused in different parts of an application. I also learned how props can be used to pass data from one component to another.
+
+**Learning Outcome:**
+I understood the concept of component-based architecture and learned how reusable components make React applications easier to develop and maintain.
+
+---
+
+### Activity 2: Dynamic Data Rendering Lab
+
+In this activity, I learned how to retrieve data from APIs and display it dynamically in a React application.
+
+I practiced displaying different types of data such as **student lists, product catalogs, news feeds, and weather information**. I used the Fetch API to retrieve data and React to display the information on the webpage.
+
+For example, a student list can be retrieved from an API and displayed using the `map()` function.
+
+```javascript id="m8d4yu"
+students.map((student) => (
+    <p>{student.name}</p>
+))
+```
+
+**Learning Outcome:**
+I understood how React applications can consume API data and dynamically display information based on the received data.
+
+---
+
+### Activity 3: State Management Challenge
+
+In this activity, I created interactive React applications such as a **Counter, Task Manager, Expense Tracker, and Shopping Cart**.
+
+I used the `useState` Hook to store and update data based on user actions.
+
+For example:
+
+```javascript id="9p1k7z"
+const [count, setCount] = useState(0);
+
+const increment = () => {
+    setCount(count + 1);
+};
+```
+
+When the user clicks the button, the state is updated and React automatically updates the user interface.
+
+**Learning Outcome:**
+I learned how to manage state in React and understood how changes in state affect the application interface.
+
+---
+
+### Activity 4: Routing & Navigation Exercise
+
+In this activity, I implemented navigation between different pages of a React application using **React Router**.
+
+I created different routes such as Home, About, Students, and Contact. I also practiced using dynamic routes and navigation menus.
+
+Example:
+
+```javascript id="v5xj0a"
+<Route path="/students" element={<Students />} />
+<Route path="/about" element={<About />} />
+```
+
+I learned that React Router allows users to navigate between different views without completely reloading the webpage.
+
+**Learning Outcome:**
+I understood how routing works in Single Page Applications and learned how to implement navigation and dynamic routes in React.
+
+---
+
+### Activity 5: Team UI Development Sprint
+
+We work into different components such as the **Navigation Bar, Sidebar, Dashboard Cards, Tables, Forms, and other UI elements**. 
+
+We also focused on making the dashboard responsive and reusable.
+
+**Learning Outcome:**
+I gained practical experience in collaborative React development and learned how reusable components can be combined to create a complete frontend application.
