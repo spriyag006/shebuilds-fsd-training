@@ -1,0 +1,90 @@
+ Module 3: Advanced JavaScript (ES6+) & Git/GitHub
+
+
+### Activity 1: API Data Retrieval
+
+In this activity, I learned how to retrieve data from a public API and display it dynamically on a webpage.
+
+I used the **Fetch API** to send a request to an API. The response was received in JSON format and displayed on the webpage using JavaScript.
+
+For example:
+
+```javascript
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.log("Error:", error);
+  });
+```
+
+Through this activity, I understood how APIs are used to retrieve data from external services and how JavaScript can display the received data dynamically.
+
+**Learning Outcome:**
+I learned how to use the Fetch API, handle JSON data, and work with asynchronous JavaScript.
+
+---
+
+### Activity 2: Team Collaboration Simulation
+
+In this activity, I learned how developers can work together on the same project using **Git and GitHub**.
+
+I practiced creating a repository, creating branches, making changes, committing changes, and pushing the changes to GitHub. I also learned how pull requests are used to review and merge code.
+
+The basic workflow I followed was:
+
+```text
+Create Repository
+       ↓
+Create Branch
+       ↓
+Make Changes
+       ↓
+Commit Changes
+       ↓
+Push to GitHub
+       ↓
+Create Pull Request
+       ↓
+Code Review
+       ↓
+Merge
+```
+
+I also learned that merge conflicts can occur when two developers modify the same part of a file. These conflicts can be resolved by reviewing the changes and selecting the correct code.
+
+**Learning Outcome:**
+I understood the importance of version control and learned how Git and GitHub support teamwork and collaborative software development.
+
+---
+
+### Activity 3: Debugging Challenge
+
+In this activity, I was given JavaScript programs containing intentional errors. I identified the errors using browser developer tools and debugging techniques and then corrected them.
+
+Some common errors I practiced identifying were:
+
+* Syntax errors
+* Undefined variables
+* Incorrect function names
+* Incorrect variable declarations
+* Errors in DOM element selection
+* Errors while fetching API data
+
+I also used `try-catch` to handle errors in JavaScript.
+
+Example:
+
+```javascript
+try {
+    let result = JSON.parse("invalid data");
+    console.log(result);
+} catch (error) {
+    console.log("An error occurred:", error);
+}
+```
+
+**Learning Outcome:**
+I learned how to identify, understand, and fix JavaScript errors. I also understood the importance of debugging and error handling when developing web applications.

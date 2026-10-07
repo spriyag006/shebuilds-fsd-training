@@ -1,0 +1,59 @@
+Module 1: Programming Fundamentals & Web Development Basics 
+
+Activity 1: How the Internet Works
+
+In this activity, I understood how a browser, server, and database work together.
+
+For example, when I open a website and log in, the browser sends my login details as a request to the server. The server processes the request and checks the information stored in the database. The database sends the required information back to the server. Finally, the server sends the response to the browser, and the result is displayed on the screen.
+
+**Flow:**
+
+Browser → Server → Database → Server → Browser
+
+Through this activity, I learned about the basic request and response process used on the Internet.
+
+---
+
+ Activity 2: Logic Building Challenge
+
+In this activity, I learned how to solve a programming problem using logic before writing the actual code.
+
+For example, to check whether a number is even or odd:
+
+**Pseudocode:**
+
+
+START
+Enter a number
+IF number % 2 == 0
+    Display "Even"
+ELSE
+    Display "Odd"
+END
+
+
+The logic can be represented as:
+
+**Start → Enter Number → Check number % 2 == 0 → Even/Odd → End**
+
+This activity helped me improve my problem-solving skills and understand how pseudocode and flowcharts can be used before writing a program.
+
+
+
+Activity 3: Real-world Scenario Mapping
+
+For this activity, I selected **Amazon** as a real-world application.
+
+| Component | Example                                                       |
+| --------- | ------------------------------------------------------------- |
+| Frontend  | Home page, product page, search bar, shopping cart            |
+| Backend   | Login, order processing, payment processing                   |
+| Database  | User details, product details, orders and payment information |
+
+When a user searches for a product, the frontend sends the request to the backend. The backend processes the request and retrieves the required product information from the database. The result is then sent back to the frontend and displayed to the user.
+
+**Flow:**
+
+User → Frontend → Backend → Database → Backend → Frontend → User
+
+Through this activity, I understood how the frontend, backend, and database work together in a real-world application.

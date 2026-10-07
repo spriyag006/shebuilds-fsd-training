@@ -1,0 +1,49 @@
+Module 2: HTML, CSS & JavaScript Fundamentals 
+
+Activity 1: Responsive Layout Design
+
+In this activity, I created a responsive landing page that can adjust its layout according to the screen size.
+
+I used **HTML** to create the structure of the webpage and **CSS media queries** to make the page responsive. The layout was designed to work properly on desktop, tablet, and mobile devices.
+
+For example, on a desktop, multiple sections can be displayed side by side, while on a mobile device, the sections are arranged vertically.
+
+**Learning Outcome:**
+I learned how responsive web design works and how CSS media queries can be used to make a webpage suitable for different screen sizes.
+
+
+
+Activity 2: Interactive Form Development
+
+In this activity, I created a registration form containing fields such as name, email, phone number, and password.
+
+I used **HTML** to create the form and **JavaScript** to validate the user inputs. If the user enters incorrect or incomplete information, an error message is displayed. When the information is entered correctly, a success message is shown.
+
+For example:
+
+* Name should not be empty.
+* Email should be in a valid format.
+* Phone number should contain the required number of digits.
+* Password should meet the required conditions.
+
+**Learning Outcome:**
+I learned how to create interactive forms, validate user input, and provide feedback to users.
+
+---
+
+ Activity 3: DOM Manipulation Workshop
+
+In this activity, I learned how to dynamically change webpage content using JavaScript and the **DOM (Document Object Model)**.
+
+For example, when a user clicks a button, JavaScript can change the text, color, or content of an HTML element.
+
+Example:
+
+```javascript
+document.getElementById("message").innerHTML = "Welcome!";
+```
+
+I also learned how to handle events such as button clicks and form submissions.
+
+**Learning Outcome:**
+I understood how JavaScript can interact with HTML elements and dynamically update webpage content based on user actions.

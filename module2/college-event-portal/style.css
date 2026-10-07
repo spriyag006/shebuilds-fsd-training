@@ -1,0 +1,405 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+
+    animation: fadeIn 2s;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* Announcement */
+
+.announcement {
+    text-align: center;
+
+    background-color: #dbeafe;
+
+    padding: 30px;
+}
+
+.announcement h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Common Section */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+
+/* Event Cards */
+
+.event-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+}
+
+.event-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    margin: 8px 0;
+}
+
+
+/* Registration Form */
+
+form {
+    max-width: 600px;
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-item {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    padding: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 25px;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .event-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+}

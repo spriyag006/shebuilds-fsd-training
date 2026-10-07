@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(    
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
+    /*
+    min-height
+    Specifies the minimum height an element should have.
+
+    100vh
+    vh means viewport height.
+    1vh = 1% of the browser window height
+    50vh = 50% of the browser window height
+    100vh = 100% of the browser window height
+    
+    linear-gradient()
+    Creates a smooth color transition between two or more colors.
+
+    135deg
+    Specifies the direction of the gradient.
+
+    0deg → bottom to top
+    90deg → left to right
+    135deg → diagonal direction
+    180deg → top to bottom */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+h1 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Search */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 2px solid violet;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #2196f3;
+}
+
+.search-box button {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2196f3;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1976d2;
+}
+
+/* Loading */
+
+.loading {
+    display: none;
+
+    color: #2196f3;
+
+    margin: 15px;
+}
+
+/* Error */
+
+.error {
+    color: red;
+
+    font-weight: bold;
+
+    margin: 15px;
+}
+
+/* Weather Card */
+
+.weather-card {
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background: #f5faff;
+
+    border-radius: 15px;
+
+    display: none;
+}
+
+.weather-card h2 {
+    color: orange;
+
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    font-size: 60px;
+
+    margin: 10px;
+}
+
+#temperature {
+    font-size: 40px;
+
+    color: #222;
+
+    margin: 10px;
+}
+
+#condition {
+    font-size: 20px;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+/* Weather Details */
+
+.weather-details {
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 15px;
+}
+
+.detail {
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    width: 45%;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail p {
+    color: #666;
+
+    margin: 5px;
+}
+
+.detail strong {
+    color: #222;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+
+    .detail {
+        width: 100%;
+    }
+}
+

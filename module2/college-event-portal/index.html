@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College Festival Event Portal">
+    <title>TechFest 2026 - College Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TechFest 2026</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Homepage -->
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>TECHFEST 2026</h1>
+
+                <p>
+                    The Annual Technical and Cultural Festival
+                </p>
+
+                <p>
+                    Learn • Compete • Innovate • Celebrate
+                </p>
+
+                <button onclick="scrollToEvents()">
+                    Explore Events
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Announcement -->
+        <section class="announcement">
+            <h2>Latest Announcement</h2>
+
+            <p id="announcementText">
+                Registration is now open for all events!
+            </p>
+
+            <button onclick="changeAnnouncement()">
+                View Update
+            </button>
+        </section>
+
+
+        <!-- Event Listings -->
+        <section id="events" class="section">
+
+            <h2>Event Listings</h2>
+
+            <div class="event-container">
+
+                <article class="event-card">
+                    <h3>Code Challenge</h3>
+                    <p>Test your programming and problem-solving skills.</p>
+                    <p><strong>Date:</strong> 15 October 2026</p>
+                    <p><strong>Time:</strong> 10:00 AM</p>
+
+                    <button onclick="registerEvent('Code Challenge')">
+                        Register
+                    </button>
+                </article>
+
+
+                <article class="event-card">
+                    <h3>AI Innovation</h3>
+                    <p>Present your innovative Artificial Intelligence projects.</p>
+                    <p><strong>Date:</strong> 15 October 2026</p>
+                    <p><strong>Time:</strong> 11:30 AM</p>
+
+                    <button onclick="registerEvent('AI Innovation')">
+                        Register
+                    </button>
+                </article>
+
+
+                <article class="event-card">
+                    <h3>Web Design</h3>
+                    <p>Design a creative and responsive website.</p>
+                    <p><strong>Date:</strong> 16 October 2026</p>
+                    <p><strong>Time:</strong> 10:00 AM</p>
+
+                    <button onclick="registerEvent('Web Design')">
+                        Register
+                    </button>
+                </article>
+
+
+                <article class="event-card">
+                    <h3>Quiz Competition</h3>
+                    <p>Participate in an exciting technical quiz.</p>
+                    <p><strong>Date:</strong> 16 October 2026</p>
+                    <p><strong>Time:</strong> 2:00 PM</p>
+
+                    <button onclick="registerEvent('Quiz Competition')">
+                        Register
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Registration Form -->
+        <section id="registration" class="section">
+
+            <h2>Event Registration</h2>
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <label for="college">College Name</label>
+                <input
+                    type="text"
+                    id="college"
+                    placeholder="Enter college name"
+                >
+
+                <label for="event">Select Event</label>
+
+                <select id="event">
+                    <option value="">-- Select Event --</option>
+                    <option>Code Challenge</option>
+                    <option>AI Innovation</option>
+                    <option>Web Design</option>
+                    <option>Quiz Competition</option>
+                </select>
+
+                <button type="submit">
+                    Submit Registration
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Schedule -->
+        <section id="schedule" class="section">
+
+            <h2>Event Schedule</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Venue</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>15 Oct</td>
+                            <td>10:00 AM</td>
+                            <td>Code Challenge</td>
+                            <td>Lab 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>15 Oct</td>
+                            <td>11:30 AM</td>
+                            <td>AI Innovation</td>
+                            <td>Seminar Hall</td>
+                        </tr>
+
+                        <tr>
+                            <td>16 Oct</td>
+                            <td>10:00 AM</td>
+                            <td>Web Design</td>
+                            <td>Lab 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>16 Oct</td>
+                            <td>2:00 PM</td>
+                            <td>Quiz Competition</td>
+                            <td>Auditorium</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gallery -->
+        <section id="gallery" class="section">
+
+            <h2>Event Gallery</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
+                        alt="College event"
+                    >
+                    <h3>Technical Events</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                        alt="Students participating in an event"
+                    >
+                    <h3>Student Activities</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80"
+                        alt="College auditorium event"
+                    >
+                    <h3>Festival Moments</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+
+            <h2>Contact Us</h2>
+
+            <p><strong>College:</strong> ABC Engineering College</p>
+
+            <p><strong>Email:</strong> techfest@college.edu</p>
+
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+
+            <p><strong>Address:</strong> Chennai, Tamil Nadu</p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 TechFest College Event Portal
+        </p>
+
+        <p>
+            Designed using HTML5, CSS3 and JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
